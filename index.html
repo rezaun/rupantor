@@ -10,6 +10,7 @@
     <title>Rupantor</title>
 </head>
 <body>
+<!--Header Section Start-->
     <section id="header">
         <div class="container">
             <img src="assets/images/logo.png" class="logo" alt="Logo">
@@ -28,7 +29,9 @@
             </div>
 
         </div>
-    </section> <!-- End header -->
+    </section>
+<!-- End header -->
+<!--Start Menu -->
     <nav id="sideNav">
         <ul>
             <li><a href="#header">HOME</a></li>
@@ -40,6 +43,7 @@
         </ul>
     </nav>
     <img src="assets/images/menu.png" id="menuBtn" alt="menu image">
+<!--Menu End-->
     <!-- Aboput section -->
     <section id="about">
         <div class="about-left-col">
@@ -67,7 +71,7 @@
             </div>
         </div>
     </section>
-
+<!-- End About Section -->
     <!--Feature Section-->
     <section id="features">
         <div class="feature-row">
@@ -96,7 +100,8 @@
             <button class="common-btn">Start Free Tial</button>
         </div>
     </section>
-    <!--Courses-->
+<!-- End Feature Section -->
+    <!--Courses Section -->
     <section id="courses">
         <div class="container course-row">
             <div class="courses-left-col">
@@ -123,8 +128,8 @@
             </div>
         </div>
     </section>
-
-<!--Offer -->
+<!-- End Courses Section -->
+<!--Offer Section -->
 
     <section id="offer">
         <div class="about-left-col">
@@ -150,7 +155,8 @@
             </div>
         </div>
     </section>
-    <!--Contact-->
+<!--End Offer Section-->
+    <!--Contact Section-->
     <section id="contact">
         <div class="container contact-row">
             <div class="contact-left-col">
@@ -175,7 +181,7 @@
             </div>
         </div>
     </section>
-    <!--Footer-->
+    <!--Footer Section -->
     <section id="footer">
         <div class="container footer-row">
             <hr>
@@ -229,7 +235,7 @@
         <a href="https://www.linkedin.com/" target="_blank"><img src="assets/images/linkedin.png" alt="facebook"></a>
     </div>
 
-
+<!--Menu hide/show js script-->
     <script>
         var menuBtn = document.getElementById("menuBtn");
         var sideNav = document.getElementById("sideNav");
@@ -243,6 +249,7 @@
                 sideNav.style.right = "-250px";
             }
         }
+//Adding smooth js for smoothscroll
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 1000,
             speedAsDuration: true,
