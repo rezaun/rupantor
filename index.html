@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>Rupantor</title>
 </head>
 <body>
@@ -30,12 +31,12 @@
     </section> <!-- End header -->
     <nav id="sideNav">
         <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">FEATURES</a></li>
-            <li><a href="">COURSES</a></li>
-            <li><a href="">OFFER</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#offer">OFFER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <img src="assets/images/menu.png" id="menuBtn" alt="menu image">
@@ -242,6 +243,10 @@
                 sideNav.style.right = "-250px";
             }
         }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true,
+        });
 
     </script>
 </body>
